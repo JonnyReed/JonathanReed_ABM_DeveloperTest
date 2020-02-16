@@ -4,40 +4,55 @@ using System.IO;
 
 namespace Q1
 {
-    internal class Program
+    public class Program
     {
-        private static void Main(string[] args)
+        //read in all the lines from the document
+        public static string[] lines = File.ReadAllLines(@"data.edi");
+        public static List<string> locLines = new List<string>();
+        public static List<string> finalResults = new List<string>();
+
+        public static void Main()
         {
-            //read in all the lines from the document
-            string[] lines = File.ReadAllLines(@"data.edi");
-            List<string> locLines = new List<string>();
-            List<string> finalResults = new List<string>();
 
-            //extract all lines that have the text "LOC" in it
-            foreach (string line in lines)
+            ExtractText(lines, locLines, "LOC");
+            FilterAndSeparateText(locLines, finalResults, '+', "LOC");
+            Print(finalResults);
+
+            Console.ReadLine();
+        }
+
+        public static void ExtractText(string[] fileAsString, List<string> emptyList, string text)
+        {
+            //extract all lines that have the text desired text in it, in this case "LOC"
+            foreach (string line in fileAsString)
             {
-                if (line.Contains("LOC"))
-                    locLines.Add(line);
+                if (line.Contains(text))
+                    emptyList.Add(line);
             }
+        }
 
-            //separate each segment of the line containing "LOC"
-            foreach (string line in locLines)
+        public static void FilterAndSeparateText(List<string> inputList, List<string> resultsList, char separator, string filterWord)
+        {
+            //separate each segment of the line containing value, in this case "LOC"
+            foreach (string line in inputList)
             {
-                string[] segments = line.Split('+');
+                string[] segments = line.Split(separator);
                 for (int i = 0; i < segments.Length; i++)
                 {
-                    //filter out all of the 1st segments, leaving only the remaining 2 segments
-                    if (segments[i] != "LOC")
-                        finalResults.Add(segments[i]);
+                    //filter out all of the unwanted segments, leaving only the remaining 2 segments
+                    if (segments[i] != filterWord)
+                        resultsList.Add(segments[i]);
                 }
             }
+        }
 
+        public static void Print(List<string> list)
+        {
             //print out the results
-            foreach (string result in finalResults)
+            foreach (string element in list)
             {
-                Console.WriteLine(result);
+                Console.WriteLine(element);
             }
-            Console.ReadLine();
         }
     }
 }
