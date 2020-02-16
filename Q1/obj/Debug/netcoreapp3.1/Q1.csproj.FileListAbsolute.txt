@@ -1,0 +1,11 @@
+C:\Users\Jonny\Source\Repos\JonathanReed_ABM_DeveloperTest\Q1\bin\Debug\netcoreapp3.1\Q1.exe
+C:\Users\Jonny\Source\Repos\JonathanReed_ABM_DeveloperTest\Q1\bin\Debug\netcoreapp3.1\Q1.deps.json
+C:\Users\Jonny\Source\Repos\JonathanReed_ABM_DeveloperTest\Q1\bin\Debug\netcoreapp3.1\Q1.runtimeconfig.json
+C:\Users\Jonny\Source\Repos\JonathanReed_ABM_DeveloperTest\Q1\bin\Debug\netcoreapp3.1\Q1.runtimeconfig.dev.json
+C:\Users\Jonny\Source\Repos\JonathanReed_ABM_DeveloperTest\Q1\bin\Debug\netcoreapp3.1\Q1.dll
+C:\Users\Jonny\Source\Repos\JonathanReed_ABM_DeveloperTest\Q1\bin\Debug\netcoreapp3.1\Q1.pdb
+C:\Users\Jonny\Source\Repos\JonathanReed_ABM_DeveloperTest\Q1\obj\Debug\netcoreapp3.1\Q1.csprojAssemblyReference.cache
+C:\Users\Jonny\Source\Repos\JonathanReed_ABM_DeveloperTest\Q1\obj\Debug\netcoreapp3.1\Q1.AssemblyInfoInputs.cache
+C:\Users\Jonny\Source\Repos\JonathanReed_ABM_DeveloperTest\Q1\obj\Debug\netcoreapp3.1\Q1.AssemblyInfo.cs
+C:\Users\Jonny\Source\Repos\JonathanReed_ABM_DeveloperTest\Q1\obj\Debug\netcoreapp3.1\Q1.dll
+C:\Users\Jonny\Source\Repos\JonathanReed_ABM_DeveloperTest\Q1\obj\Debug\netcoreapp3.1\Q1.pdb
